@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Шесть-семь</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="digits" aria-hidden="true"><span class="digit six">6</span><span class="digit seven">7</span></div>
+    <h1>Шесть-семь</h1>
+    <p class="lead" style="margin-inline:auto">Число 67 и мем вокруг него: жест двумя ладонями вверх, который поднимается и опускается по очереди. Ниже можно потыкать, посчитать и разобраться, откуда это взялось.</p>
+    <label class="tempo" for="tempo">Темп ладоней
+      <input type="range" id="tempo" min="0.4" max="2.4" step="0.1" value="1.2">
+    </label>
+  </header>
+
+  <section aria-labelledby="game-h">
+    <div class="head">
+      <span class="label">Игра</span>
+      <h2 id="game-h">Нажми 67 раз</h2>
+      <p>Таймер запускается с первого нажатия и останавливается на 67-м. Лучшее время сохраняется в этом браузере.</p>
+    </div>
+    <div class="card game">
+      <div class="big-count"><span id="count">0</span><small> / 67</small></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="67" aria-valuenow="0" id="bar-wrap"><i id="bar"></i></div>
+      <div class="row">
+        <button class="tap" id="tap" type="button">Жми!</button>
+        <button class="ghost" id="reset" type="button">Сначала</button>
+      </div>
+      <div class="status" id="status" aria-live="polite">Ждём первого нажатия.</div>
+    </div>
+  </section>
+
+  <section aria-labelledby="lab-h">
+    <div class="head">
+      <span class="label">Лаборатория</span>
+      <h2 id="lab-h">Что умеет число 67</h2>
+      <p>Введи любое целое число от 0 до 999 999 и посмотри на него со всех сторон. По умолчанию стоит 67.</p>
+    </div>
+    <div class="card">
+      <div class="lab-input">
+        <label for="num" class="label">Число</label>
+        <input type="number" id="num" value="67" min="0" max="999999" step="1" inputmode="numeric">
+        <button class="ghost" id="rand" type="button">Случайное</button>
+        <button class="ghost" id="back67" type="button">Вернуть 67</button>
+      </div>
+      <dl id="lab-out"></dl>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-h">
+    <div class="head">
+      <span class="label">Рост</span>
+      <h2 id="h-h">6′7″ в сантиметрах</h2>
+      <p>Баскетбольный рост, с которым часто связывают этот мем, это шесть футов семь дюймов. Подвигай ползунок и сравни.</p>
+    </div>
+    <div class="card stack">
+      <div class="height-out" id="h-out">200,7 см</div>
+      <input type="range" id="h-cm" class="wide" min="140" max="230" step="1" value="201" aria-label="Рост в сантиметрах">
+      <div class="height-sub" id="h-sub"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tl-h">
+    <div class="head">
+      <span class="label">История</span>
+      <h2 id="tl-h">Откуда это взялось</h2>
+    </div>
+    <ol>
+      <li class="tl">
+        <div class="when">2024</div>
+        <div><h3>Трек «Doot Doot (6 7)»</h3><p>Рэпер Skrilla выпускает песню с этим припевом. Строка про «шесть-семь» быстро уходит в нарезки.</p></div>
+      </li>
+      <li class="tl">
+        <div class="when">2025</div>
+        <div><h3>Баскетбольные клипы и школьные коридоры</h3><p>Звук ложится на видео с баскетболистами высокого роста, а жест с качающимися ладонями повторяют подростки. Само выражение почти ничего не значит, и в этом его суть.</p></div>
+      </li>
+      <li class="tl">
+        <div class="when">Конец 2025</div>
+        <div><h3>Слово года</h3><p>Dictionary.com называет «67» словом года, отмечая, что у него нет определённого значения и оно работает как знак своей компании.</p></div>
+      </li>
+    </ol>
+    <p class="note">Даты и подробности пересказаны кратко. Если нужна точность, проверь их по первоисточникам.</p>
+  </section>
+
+  <footer>Страница про число 67. Всё считается прямо в браузере.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
